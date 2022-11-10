@@ -1,3 +1,5 @@
+import Foundation
+
 struct AnyCodingKey: CodingKey, Equatable {
     var stringValue: String
     var intValue: Int?

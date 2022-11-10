@@ -1,3 +1,5 @@
+import Foundation
+
 extension FixedWidthInteger {
     init(bytes: [UInt8]) {
         self = bytes.withUnsafeBufferPointer {
