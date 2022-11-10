@@ -56,25 +56,6 @@ let package = Package(
 
 Then run the `swift build` command to build your project.
 
-### CocoaPods
-
-You can install `MessagePack` via CocoaPods,
-by adding the following line to your `Podfile`:
-
-```ruby
-pod 'MessagePack-FlightSchool', '~> 1.2.4'
-```
-
-Run the `pod install` command to download the library
-and integrate it into your Xcode project.
-
-> **Note**
-> The module name for this library is "MessagePack" ---
-> that is, to use it, you add `import MessagePack` to the top of your Swift code
-> just as you would by any other installation method.
-> The pod is called "MessagePack-FlightSchool"
-> because there's an existing pod with the name "MessagePack".
-
 ## License
 
 MIT
