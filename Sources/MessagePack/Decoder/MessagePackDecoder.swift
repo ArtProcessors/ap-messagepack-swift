@@ -120,7 +120,7 @@ extension _MessagePackDecoder: Decoder {
     }
 }
 
-protocol MessagePackDecodingContainer: class {
+protocol MessagePackDecodingContainer: AnyObject {
     var codingPath: [CodingKey] { get set }
     
     var userInfo: [CodingUserInfoKey : Any] { get }

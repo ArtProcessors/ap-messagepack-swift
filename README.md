@@ -1,7 +1,5 @@
 # MessagePack
 
-[![Build Status][build status badge]][build status]
-
 A [MessagePack](https://msgpack.org/) encoder and decoder for `Codable` types.
 
 This functionality is discussed in Chapter 7 of
@@ -9,7 +7,7 @@ This functionality is discussed in Chapter 7 of
 
 ## Requirements
 
-- Swift 4.2+
+- Swift 5.5+
 
 ## Usage
 
@@ -29,7 +27,7 @@ let value = try! encoder.encode(["a": 1, "b": 2, "c": 3])
 import MessagePack
 
 let decoder = MessagePackDecoder()
-let data = Data(bytes: [0xCB, 0x40, 0x09, 0x21, 0xF9, 0xF0, 0x1B, 0x86, 0x6E])
+let data = Data([0xCB, 0x40, 0x09, 0x21, 0xF9, 0xF0, 0x1B, 0x86, 0x6E])
 let value = try! decoder.decode(Double.self, from: data)
 // 3.14159
 ```
@@ -47,8 +45,8 @@ let package = Package(
   name: "YourProject",
   dependencies: [
     .package(
-        url: "https://github.com/Flight-School/MessagePack",
-        from: "1.2.3"
+        url: "git@github.com:ArtProcessors/ap-messagepack-swift.git",
+        from: "1.3.0"
     ),
   ]
 )
@@ -63,6 +61,3 @@ MIT
 ## Contact
 
 Mattt ([@mattt](https://twitter.com/mattt))
-
-[build status]: https://github.com/Flight-School/MessagePack/actions?query=workflow%3ACI
-[build status badge]: https://github.com/Flight-School/MessagePack/workflows/CI/badge.svg
